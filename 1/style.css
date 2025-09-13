@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(240, 204, 75);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Figtree", sans-serif;
+}
+
+/* Wrapper */
+.bg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  width: 100%;
+}
+
+/* Main card */
+.cover {
+  background: white; 
+  border-radius: 15px;
+  border: 2px solid black;
+  padding: 15px;
+  width: 90%;         /* full width on small devices */
+  max-width: 337px;
+  min-width: 160px;   /* never larger than 400px */
+  min-height: 60vh;   /* adjust height flexibly */
+  display: flex;
+  flex-direction: column;
+  box-shadow: 12px 12px rgb(0 0 0 / 1.2);
+}
+
+/* Image */
+.cover img {
+  border-radius: 10px;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Yellow tag */
+.box {
+  background: rgb(240, 204, 75);
+  width: fit-content;
+  border-radius: 4px;
+  margin: 20px 0 15px 0;
+  padding: 5px 12px;
+  color: black;
+  font-weight: bold;
+}
+.box:hover{
+    transform: scale(1.05);
+}
+
+/* Text styles */
+.p1 {
+  font-weight: bold;
+}
+
+.p2 {
+  margin: 10px 0 15px 0;
+  font-size: 0.9rem;
+  
+}
+
+h2 {
+  margin: 15px 0px;
+  font-size: clamp(1.2rem, 4vw, 1.6rem);
+}
+
+.para {
+  margin: 5px 0;
+}
+
+.p3 {
+  margin: 15px 0px;
+  
+  font-size: clamp(0.9rem, 3vw, 1rem);
+  line-height: 1.4;
+}
+
+/* Avatar + Name */
+.id {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.id img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.p4 {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+h2 {
+    font-size: 1.2rem;
+}
+h2:hover{
+    font-weight: bold;
+}
+.p3 {
+    font-size: 0.9rem;
+}
+
+.id img {
+    height: 32px;
+    width: 32px;
+}
+.id img:hover{
+    transform: scale(1.05); /* zoom in */
+    cursor: pointer;
+}
+.owner:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
